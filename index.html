@@ -3,21 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Portfolio</title>
+    <title>My Unique Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Unique Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Creative Developer | Innovative Solutions</h2>
+        <p>Exploring the intersection of design and technology.</p>
+        <a href="#projects" class="btn">See My Work</a>
+    </section>
+    
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hi! I'm a passionate developer who loves building interactive and visually appealing web experiences.</p>
+    </section>
+    
+    <section id="projects" class="container">
+        <h2>Price tracker url</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>3D Portfolio</h3>
+                <p>A portfolio with interactive 3D elements using WebGL.</p>
+                <a href="https://github.com/VAMSHIREDDY2000" class="btn" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <h3>A Autonomous url</h3>
+                <p>where u can trace the prices.</p>
+                <a href="https://github.com/VAMSHIREDDY2000" class="btn" target="_blank">View on GitHub</a>
+            </div>
+            <div class="card">
+                <h3>Dark Mode Dashboard</h3>
+                <p>A stylish and modern dashboard with full dark mode support.</p>
+                <a href="https://github.com/VAMSHIREDDY2000" class="btn" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container">
+        <h2>Connect with me</h2>
+        <p>Email: nallavamshikrishnareddy@gmail.com.com</p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/VAMSHIREDDY2000</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 vamshi_krishna_nalla. All Rights Reserved.</p>
+    </footer>
+    
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
+            background-color: #1e1e1e;
+            color: white;
         }
         header {
-            background: #333;
-            color: white;
-            padding: 1rem 0;
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
         }
         nav ul {
             list-style: none;
@@ -28,13 +84,37 @@
             margin: 0 15px;
         }
         nav ul li a {
-            color: white;
+            color: #ff7f50;
             text-decoration: none;
+            font-weight: bold;
         }
         #hero {
-            background: linear-gradient(to right, #667eea, #764ba2);
+            background: linear-gradient(to right, #ff7f50, #ff416c);
             color: white;
-            padding: 50px 0;
+            text-align: center;
+            padding: 80px 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(255, 127, 80, 0.2);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
         }
         .btn {
             display: inline-block;
@@ -45,69 +125,15 @@
             border-radius: 5px;
             margin-top: 10px;
         }
-        section {
-            padding: 50px 20px;
-        }
-        .project-card {
-            background: white;
-            padding: 20px;
-            margin: 10px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .btn:hover {
+            background: #ff5733;
         }
         footer {
-            background: #333;
-            color: white;
-            padding: 10px 0;
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
         }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio(Vamshi)</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact +917416929567</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <h2>Innovative Developer | Creative Thinker</h2>
-        <p>Building solutions that make a difference.</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </section>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm a passionate developer with expertise in web and software development, always eager to learn and create innovative solutions.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Featured Projects</h2>
-        <div class="project-card">
-            <h3>AI Chatbot</h3>
-            <p>An AI-powered chatbot designed to assist users intelligently.</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>A fully responsive, interactive portfolio site to showcase my work.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Email: nallavamshikrishnareddy@gmail.com.com</p>
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/VAMSHIREDDY2000</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">www.linkedin.com/in/nalla-vamshi-krishna-936254315</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 vamshi krishna nalla. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>

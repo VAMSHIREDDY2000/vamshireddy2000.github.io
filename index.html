@@ -5,46 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #hero {
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            padding: 50px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff7f50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        section {
+            padding: 50px 20px;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Welcome to My Portfolio(Vamshi)</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Contact +91 7416929567</a></li>
             </ul>
         </nav>
     </header>
     
+    <section id="hero">
+        <h2>Innovative Developer | Creative Thinker</h2>
+        <p>Building solutions that make a difference.</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+    
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm a passionate developer with experience in web development.</p>
+        <p>Hi! I'm a passionate developer with expertise in web and software development, always eager to learn and create innovative solutions.</p>
     </section>
     
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
+        <h2>Featured Projects</h2>
+        <div class="project-card">
+            <h3>AI Chatbot</h3>
+            <p>An AI-powered chatbot designed to assist users intelligently.</p>
             <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
         </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A fully responsive, interactive portfolio site to showcase my work.</p>
             <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
         </div>
     </section>
     
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
+        <h2>Get in Touch</h2>
+        <p>Email: nallavamshikrishnareddy@gmail.com.com</p>
         <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
     </section>
     
     <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <p>&copy; 2025 vamshi krishna nalla. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
